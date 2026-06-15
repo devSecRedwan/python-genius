@@ -3,7 +3,12 @@ while name == "":
     name = str(input("Please enter your name: "))
 
 age = int(input("How old are you? "))
-while age < 0 and age > 120:
+while age < 10 and age > 120:
+    if age > 0 and age < 10:
+        print("Sorry, you are too young to participate in this survey.")
+        exit()
+    elif age > 120:
+        print("Sorry, you have entered an invalid age.")
     age = int(input("Please enter a valid age: "))
 
 dev_status = bool(input("Are you a developer? (True/False) "))
