@@ -12,7 +12,6 @@ def calculate_capacity(config):
 
     active_nodes_count = 0
     for node in active_nodes:
-        # Assuming non-empty string means active node
         active_nodes_count += bool(node)
 
     utilization_percentage = (
