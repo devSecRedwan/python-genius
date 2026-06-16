@@ -22,7 +22,7 @@ def calculate_capacity(config):
     print(f" Total active nodes found: {active_nodes_count}")
     print(f" Total max slots available: {total_max_slots}")
     print(f" Utilization Percentage: {utilization_percentage:.2f}%")
-    print(f" ###### End of Report ###### ")
+    print("###### End of Report ######")
 
 
 calculate_capacity(cluster_config)
